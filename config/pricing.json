@@ -1,0 +1,47 @@
+{
+  "seller": {
+    "id": "harbour-news",
+    "payTo": "0x5e11e700000000000000000000000000000c0ffee",
+    "network": "sim-base",
+    "asset": "USDC-SIM",
+    "decimals": 6
+  },
+  "limits": {
+    "maxTimeoutSeconds": 120,
+    "signatureMaxValiditySeconds": 3600,
+    "clockSkewSeconds": 30,
+    "keyDirectoryCacheSeconds": 300,
+    "deliveryRetrySeconds": 300,
+    "payerSpendCap": { "amount": "15000000", "windowSeconds": 86400 }
+  },
+  "rules": [
+    {
+      "id": "home",
+      "match": { "path": "/" },
+      "free": true
+    },
+    {
+      "id": "articles",
+      "description": "A news article",
+      "match": { "path": "/articles/*" },
+      "price": { "verified": "5000", "unverified": "20000" },
+      "partners": { "search.agents.sim": "0" },
+      "charge": "on_delivery"
+    },
+    {
+      "id": "search-api",
+      "description": "One search over the archive",
+      "match": { "path": "/api/search" },
+      "price": { "verified": "1000", "unverified": "block" },
+      "charge": "on_delivery"
+    },
+    {
+      "id": "resolve-ticket",
+      "description": "A support ticket resolved by the publisher's agent",
+      "match": { "path": "/api/resolve" },
+      "price": { "verified": "990000", "unverified": "block" },
+      "charge": "on_outcome",
+      "outcome": { "status": "2xx", "header": "x-outcome", "equals": "resolved" }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "payable-edge-gateway",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [
+      { "name": "PAYER_LEDGER", "class_name": "PayerLedger" },
+      { "name": "SELLER_BOOK", "class_name": "SellerBook" },
+      { "name": "SIM_CHAIN", "class_name": "SimChain" },
+      { "name": "SIM_REGISTRY", "class_name": "SimRegistry" }
+    ]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["PayerLedger", "SellerBook", "SimChain", "SimRegistry"] }],
+  "vars": { "SIM": "1", "ADMIN_TOKEN": "dev-admin-token" }
+}

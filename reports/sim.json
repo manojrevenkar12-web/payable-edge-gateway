@@ -1,0 +1,280 @@
+{
+ "tasks": 4000,
+ "http_requests_approx": 8580,
+ "concurrency": 16,
+ "seed": 7,
+ "wall_seconds": 43.2,
+ "tasks_per_second": 93,
+ "correct": 4000,
+ "spending_cap": {
+  "cap": "15000000",
+  "wallet_spend_before_drain": "4131000",
+  "drained_in_window": "9900000",
+  "refused_at_request": 11,
+  "held": true
+ },
+ "attacks": {
+  "tasks": 1018,
+  "refused_or_contained": 1018
+ },
+ "wallets": {
+  "checked": 80,
+  "mismatched": 0
+ },
+ "expected_revenue": "370565000",
+ "book_revenue": "370565000",
+ "chain_revenue": "370565000",
+ "book_matches_chain": true,
+ "expected_matches_book": true,
+ "latency_unloaded_ms": {
+  "requests": 200,
+  "free_route": {
+   "p50": 6.57,
+   "p95": 9.77,
+   "p99": 12.91
+  },
+  "paid_request": {
+   "p50": 18.57,
+   "p95": 26.16,
+   "p99": 29
+  },
+  "payment_overhead_p50": 12
+ },
+ "latency_ms": {
+  "free_route": {
+   "p50": 85.04,
+   "p99": 161.69
+  },
+  "paid_request": {
+   "p50": 88.38,
+   "p99": 165.5
+  }
+ },
+ "by_kind": {
+  "article": {
+   "tasks": 1276,
+   "correct": 1276,
+   "attack": false,
+   "p50_ms": 88.11,
+   "p99_ms": 165.5,
+   "errors": []
+  },
+  "search": {
+   "tasks": 475,
+   "correct": 475,
+   "attack": false,
+   "p50_ms": 88.51,
+   "p99_ms": 169.96,
+   "errors": []
+  },
+  "resolve": {
+   "tasks": 416,
+   "correct": 416,
+   "attack": false,
+   "p50_ms": 87.03,
+   "p99_ms": 172.96,
+   "errors": []
+  },
+  "partner": {
+   "tasks": 219,
+   "correct": 219,
+   "attack": false,
+   "p50_ms": 83.72,
+   "p99_ms": 146.22,
+   "errors": []
+  },
+  "unverified_article": {
+   "tasks": 205,
+   "correct": 205,
+   "attack": false,
+   "p50_ms": 90.57,
+   "p99_ms": 160.77,
+   "errors": []
+  },
+  "free_home": {
+   "tasks": 261,
+   "correct": 261,
+   "attack": false,
+   "p50_ms": 85.04,
+   "p99_ms": 161.69,
+   "errors": []
+  },
+  "retry_redelivery": {
+   "tasks": 130,
+   "correct": 130,
+   "attack": false,
+   "p50_ms": 85.33,
+   "p99_ms": 146.66,
+   "errors": []
+  },
+  "replay_other_resource": {
+   "tasks": 167,
+   "correct": 167,
+   "attack": true,
+   "p50_ms": 82.03,
+   "p99_ms": 170.72,
+   "errors": []
+  },
+  "double_spend_burst": {
+   "tasks": 145,
+   "correct": 145,
+   "attack": true,
+   "p50_ms": 105.06,
+   "p99_ms": 179.45,
+   "errors": []
+  },
+  "underpay": {
+   "tasks": 124,
+   "correct": 124,
+   "attack": true,
+   "p50_ms": 82.8,
+   "p99_ms": 159.21,
+   "errors": []
+  },
+  "expired": {
+   "tasks": 109,
+   "correct": 109,
+   "attack": true,
+   "p50_ms": 90.85,
+   "p99_ms": 164.2,
+   "errors": []
+  },
+  "forged_bot": {
+   "tasks": 110,
+   "correct": 110,
+   "attack": true,
+   "p50_ms": 82.7,
+   "p99_ms": 155.46,
+   "errors": []
+  },
+  "tampered_agent": {
+   "tasks": 111,
+   "correct": 111,
+   "attack": true,
+   "p50_ms": 82.52,
+   "p99_ms": 139.46,
+   "errors": []
+  },
+  "stolen_key": {
+   "tasks": 105,
+   "correct": 105,
+   "attack": true,
+   "p50_ms": 83.88,
+   "p99_ms": 147.16,
+   "errors": []
+  },
+  "broke": {
+   "tasks": 76,
+   "correct": 76,
+   "attack": true,
+   "p50_ms": 89.87,
+   "p99_ms": 155.85,
+   "errors": []
+  },
+  "unverified_blocked": {
+   "tasks": 71,
+   "correct": 71,
+   "attack": true,
+   "p50_ms": 81.66,
+   "p99_ms": 145.75,
+   "errors": []
+  }
+ },
+ "seller_report": {
+  "seller": "harbour-news",
+  "sales": 2958,
+  "revenue": "370565000",
+  "byOperator": {
+   "crawler-a.agents.sim": {
+    "sales": 722,
+    "revenue": "97670000"
+   },
+   "crawler-b.agents.sim": {
+    "sales": 670,
+    "revenue": "96517000"
+   },
+   "research.agents.sim": {
+    "sales": 670,
+    "revenue": "73834000"
+   },
+   "shopping.agents.sim": {
+    "sales": 691,
+    "revenue": "98444000"
+   },
+   "unverified": {
+    "sales": 205,
+    "revenue": "4100000"
+   }
+  },
+  "byRule": {
+   "articles": {
+    "sales": 2123,
+    "revenue": "13690000"
+   },
+   "resolve-ticket": {
+    "sales": 360,
+    "revenue": "356400000"
+   },
+   "search-api": {
+    "sales": 475,
+    "revenue": "475000"
+   }
+  },
+  "counters": {
+   "free:home": 461,
+   "quoted:articles": 2537,
+   "quoted:resolve-ticket": 428,
+   "quoted:search-api": 475,
+   "free:articles": 219,
+   "refused:insufficient funds": 76,
+   "not charged:outcome not met": 67,
+   "refused:bot signature rejected": 221,
+   "redelivered": 140,
+   "refused:payment already used": 167,
+   "refused:amount below the price": 124,
+   "refused:key is not the payer's": 105,
+   "refused:blocked": 71,
+   "refused:payment in use by another request": 570,
+   "refused:authorization expired": 109,
+   "refused:payer spending limit reached": 1
+  },
+  "reconciliation": {
+   "book": {
+    "sales": 2958,
+    "total": "370565000"
+   },
+   "chain": {
+    "count": 2958,
+    "total": "370565000"
+   },
+   "matches": true
+  }
+ },
+ "pricing": [
+  {
+   "id": "home",
+   "free": true
+  },
+  {
+   "id": "articles",
+   "price": {
+    "verified": "5000",
+    "unverified": "20000"
+   }
+  },
+  {
+   "id": "search-api",
+   "price": {
+    "verified": "1000",
+    "unverified": "block"
+   }
+  },
+  {
+   "id": "resolve-ticket",
+   "price": {
+    "verified": "990000",
+    "unverified": "block"
+   }
+  }
+ ]
+}

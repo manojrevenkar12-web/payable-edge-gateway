@@ -1,0 +1,70 @@
+{
+ "seller": "harbour-news",
+ "sales": 2958,
+ "revenue": "370565000",
+ "byOperator": {
+  "crawler-a.agents.sim": {
+   "sales": 722,
+   "revenue": "97670000"
+  },
+  "crawler-b.agents.sim": {
+   "sales": 670,
+   "revenue": "96517000"
+  },
+  "research.agents.sim": {
+   "sales": 670,
+   "revenue": "73834000"
+  },
+  "shopping.agents.sim": {
+   "sales": 691,
+   "revenue": "98444000"
+  },
+  "unverified": {
+   "sales": 205,
+   "revenue": "4100000"
+  }
+ },
+ "byRule": {
+  "articles": {
+   "sales": 2123,
+   "revenue": "13690000"
+  },
+  "resolve-ticket": {
+   "sales": 360,
+   "revenue": "356400000"
+  },
+  "search-api": {
+   "sales": 475,
+   "revenue": "475000"
+  }
+ },
+ "counters": {
+  "free:home": 461,
+  "quoted:articles": 2537,
+  "quoted:resolve-ticket": 428,
+  "quoted:search-api": 475,
+  "free:articles": 219,
+  "refused:insufficient funds": 76,
+  "not charged:outcome not met": 67,
+  "refused:bot signature rejected": 221,
+  "redelivered": 140,
+  "refused:payment already used": 167,
+  "refused:amount below the price": 124,
+  "refused:key is not the payer's": 105,
+  "refused:blocked": 71,
+  "refused:payment in use by another request": 570,
+  "refused:authorization expired": 109,
+  "refused:payer spending limit reached": 1
+ },
+ "reconciliation": {
+  "book": {
+   "sales": 2958,
+   "total": "370565000"
+  },
+  "chain": {
+   "count": 2958,
+   "total": "370565000"
+  },
+  "matches": true
+ }
+}
