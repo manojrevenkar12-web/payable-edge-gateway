@@ -15,7 +15,7 @@ export const color = {
 
 export const font = {
   family: '"Schibsted Grotesk Variable", system-ui, sans-serif',
-  numerals: "tabular-nums lining-nums",
+  numerals: "lining-nums proportional-nums", // tabular figures in this face widen "." and "," to a digit
 } as const;
 
 /** a 1.25 modular scale from a 16px body */

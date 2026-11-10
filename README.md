@@ -51,6 +51,8 @@ Served without charging: 140 retries delivered again, 67 unresolved tickets, 219
 Under load (16 tasks at once) p50 is 88.38 ms paid and 85.04 ms free, 93 tasks a second; with the simulator and the Worker sharing one machine those figures measure the machine, not the gateway.
 <!-- dashboard:end -->
 
+![The seller console: revenue, the book against the chain, who paid, what was refused](docs/console.png)
+
 ## How a paid request goes
 
 ```
